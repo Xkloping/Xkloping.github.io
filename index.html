@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
+	<audio style="display:none; height: 0" id="bg-music" preload="auto" src="../static/videos/bg-music.mp3" loop="loop"></audio>document.addEventListener('DOMContentLoaded', function () {    function audioAutoPlay() {        var audio = document.getElementById('bg-music');            audio.play();        document.addEventListener("WeixinJSBridgeReady", function () {            audio.play();        }, false);    }    audioAutoPlay();});
 <div class="htmleaf-container">
 	<div class="wrapper">
 		<div class="container">
